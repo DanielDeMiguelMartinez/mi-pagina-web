@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Página Web</h1>
+    </header>
+
+
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('sobre-mi')">Sobre mí</button>
+        <button onclick="mostrarSeccion('contacto')">Contacto</button>
+        <button onclick="mostrarSeccion('Temática')">Temática</button>
+        <button onclick="mostrarSeccion('Grado')">Grado</button>
+        <button onclick="mostrarSeccion('Red')">Red</button>
+    </nav>
+
+
+    <main>
+
+        <div id="inicio" class="seccion activa">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi página web.</p>
+            <p>Mi página web es un proyecto que he creado para la asignatura de Fundamentos de Ingeniería Informática. En ella cuento un poco sobre mí, muestro algunas fotos, incluyo mi currículum y también explico en qué consiste el grado y la asignatura. Además, he añadido un formulario de contacto y enlaces a las páginas web de mis compañeros. Todo funciona con botones que van mostrando cada sección sin cambiar de página..</p>
+        </div>
+
+
+        <div id="sobre-mi" class="seccion">
+            <h2>Sobre mí</h2>
+            <p>Mi nombre es Daniel de Miguel tengo 18 años y soy un apasionado de los deportes y la cocina, llevo haciendo deporte desde los 5 años y practicamente he hecho todos los deportes, actualmente voy al gimnasio hago crossfit y mma y la verdad que estoy muy contento, tambien me encanta la informática desde cuando era pequeño ya que siempre me ha interesado todo lo que tenga que ver con la tecnología.</p>
+             <img src="IMG_3246.JPG" alt="Foto de Daniel" class="foto-sobre-mi"> <img src="IMG_4586.JPG" alt="Foto de comida" class="foto-sobre-mi">
+             <h4>Mi currículum vitae:</h4>
+             <img src="Captura de pantalla 2025-12-30 144735.png" alt="Foto de Daniel" class="foto-sobre-micurriculum">
+        </div>
+
+
+        <div id="contacto" class="seccion">
+            <h2>Formulario de contacto:</h2>
+            <form>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Descripción del asunto:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="10" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        
+        </div>
+
+
+        <div id="Temática" class="seccion">
+            <h2>Temática</h2>
+            <p>La temática de esta página web son las artes marciales mixtas(MMA) .</p> <a href="https://www.youtube.com/watch?v=Dtc_GdMIT-c" target="_blank"> <button>GREATEST KNOCKOUTS in Every UFC Division!</button> </a>
+            <p>Las artes marciales mixtas (MMA) son un deporte de combate que combina técnicas de diversas disciplinas de artes marciales y deportes de combate, como el boxeo, el jiu-jitsu brasileño, la lucha libre, el muay thai, el judo y el karate, entre otros. Los luchadores de MMA utilizan una variedad de técnicas de golpeo y grappling para derrotar a sus oponentes en un entorno controlado.</p>
+            <h4>Beneficios de hacer MMA:</h4>
+            <p>Fortalece el cuerpo, mejora la resistencia cardiovascular y desarrolla habilidades de combate, tambien te pone en situaciones dificiles en las cuales tienes que actuar rapido solventandolas por ti mismo.</p> <img src="Copilot_20251230_150515.png" alt="Foto de mma" class="foto-mma">
+            <h4>Experiencia personal:</h4>
+            <p>Creo que es un deporte que todo el mundo debería probar al menos una vez en la vida ya que no solo te ayuda para defenderte si no que tambien mentalmente te aporta una gran fuerza de voluntad. Aunque yo siempre le digo a mi familia y amigos que da igual el deporte que hagan pero que alguno tienen que hacer ya que el deporte es vida.</p>
+        </div>
+
+
+        <div id="Grado" class="seccion">
+            <h2>Grado</h2>
+            <p>El Grado en Ingeniería Informática tiene como objetivo formar profesionales capaces de diseñar, desarrollar, implementar y mantener sistemas informáticos, aplicando principios científicos, técnicos y éticos. Aparte tambien forman a los alumnos para que puedan adaptarse a la evolución constante de la tecnología.</p>
+            <p>El propósito principal del grado es capacitar al alumnado para resolver problemas complejos relacionados con el software, el hardware, las redes y los sistemas de información.</p>
+            <h4> Aignaturas del primer año de ingeniería informática: </h4>
+            <p>Fundamentos de la Ingeniería Informática: Introduce los conceptos básicos de la ingeniería informática</p>
+            <p>Matemáticas Discretas: Se centra en estructuras matemáticas fundamentales para la informática, como conjuntos, relaciones...</p>
+            <p>Matemáticas para la Ingeniería I y II: Conocimientos matemáticos necesarios para la ingeniería.</p>
+            <p>Introducción a la Programación: Principios básicos de la programación y el pensamiento algorítmico.</p>
+            <p>Lógica y Pensamiento Crítico: Desarrolla habilidades de razonamiento lógico, análisis y argumentación.</p>
+            <p>Gestión de Personas y Habilidades: Desarrollo de habilidades personales y sociales.</p>
+            <p>Electrónica y Tecnología de Computadores: Introduce los principios básicos de la electrónica y el funcionamiento interno de los computadores.</p>
+            <p>Empresa y sus Procesos: Ofrece una visión general del funcionamiento de las empresas.</p>
+            <p>Programación Orientada a Objetos: Profundiza en el desarrollo de software utilizando el paradigma orientado a objetos.</p>
+            <p>Historia de la Ciencia y la Tecnología: Analiza la evolución de la ciencia y la tecnología a lo largo del tiempo y su impacto en la sociedad.</p>
+            <h4>Si quieres saber mas sobre la asignatura de fundamentos pulse aqui: </h4>
+            <button onclick="mostrarSeccion('Fundamentos')">Fundamentos</button>
+        </div>
+        <div id="Fundamentos" class="seccion">
+            <h2>Fundamentos de la Ingeniería Informática</h2>
+            <h4>PARTE 1. BLOQUE 1. LA INGENIERÍA INFORMÁTICA EN LA SOCIEDAD ACTUAL:</h4>
+            <p>Antecendentes y perspectivas históricas.</p>
+            <p>El contexto actual de la informática.</p>
+            <p>La ingenieria informática como carrera y profesión.</p>
+            <h4>PARTE 1. BLOQUE 2. PARADIGMAS ACTUALES Y TENDENCIAS DE LOS SISTEMAS Y LAS APLICACIONES </h4>
+            <p>El software.</p>
+            <p>Hardware.</p>
+            <p>Sistemas operativos.</p>
+            <p>Redes</p>
+            <p>Nuevas tendencias</p>
+            <h4> PARTE I. BLOQUE III. LA INFORMACIÓN Y LOS DATOS</h4>
+            <p>Representación de la información I.</p>
+            <p>Representación de la información II.</p>
+            <p>Base de datos.</p>
+            <h4>  PARTE II. BLOQUE IV. HABILIDADES PRÁCTICAS: INTRODUCCIÓN AL DESARROLLO WEB</h4>
+            <p>Introducción al desarrollo de software.</p>
+            <p>Herramientas de desarrollo</p>
+            <h4>  PARTE II. BLOQUE V. HABILIDADES PRÁCTICAS: HTML</h4>
+            <p>Introducción al desarrollo web.</p>
+            <p>Mi primera página web.</p>
+            <h4> PARTE II. BLOQUE VI. HABILIDADES PRÁCTICAS: CSS</h4>
+            <h3>Acerca del profesor: </h3>
+            <p>El profesor de la asignatura de Fundamentos de la Ingeniería Informática, Héctor Molina tiene una amplia experiencia docente en el ámbito de la informática, tambien cuenta con un doctorado en ciencias de la información y es el responsable de Actividades Formativas Complementarias en la universidad Francisco de Vitoria.</p>
+            <p> Linkedin del profesor:</p>
+            <a href="https://www.linkedin.com/in/hectormolinagarcia/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <button>Héctor Molina</button>
+            </a>
+         </div>
+
+
+         <div id="Red" class="seccion">
+            <h2>Paginas web de mis compañeros:</h2>
+            <a href="https://canchal27.github.io/Mi_primer_repositorio2024/SRC/index.html" target="_blank">
+                <button>Web de Alejandro Canchal</button>
+            </a>
+            <a href="https://martin-jaimes-zambrano.github.io/Web_Martin_Jaimes/index.html" target="_blank">
+                <button>Web de Martin Jaimes</button>
+            </a>
+            <a href="https://miguel-reyes-gomez.github.io/trabajo-individual-fii-miguelreyes/index.html" target="_blank">
+                <button>Web de Miguel Reyes</button>
+            </a>
+            <a href="https://pablo-garcia-blanco.github.io/Web_Pablo_Garcia_Blanco/docs/index.html" target="_blank">
+                <button>Web de Pablo Garcia</button>
+            </a>
+            <a href="https://pablo-deabajo-plans.github.io/trabajo_individual_web/" target="_blank">
+                <button>Web de Pablo De abajo</button>
+            </a>
+    </main>
+
+
+    <footer>
+        <p> © DANIEL DE MIGUEL</p>
+    </footer>
+
+
+    <script>
+        function mostrarSeccion(id) {
+            const secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(seccion => {
+                seccion.classList.remove('activa');
+            });
+            document.getElementById(id).classList.add('activa');
+        }
+    </script>
+
+</body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e6dede;
+        }
+        header {
+            background-color: #3e6844;
+            color: rgb(251, 250, 250);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #28422c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        nav button:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 30px;
+        }
+        .seccion {
+            display: none;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .activa {
+            display: block;
+        }
+        footer {
+            background-color: #28422c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .foto-sobre-mi {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        #sobre-mi {
+            text-align: center;
+        }
+        .foto-sobre-micurriculum {
+            width: 800px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .foto-mma{
+            width: 400px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+ </html>
